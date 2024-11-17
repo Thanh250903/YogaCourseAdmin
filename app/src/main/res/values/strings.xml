@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">YogaCourse</string>
+    <string name="title_home">Courses</string>
+    <string name="title_search">Search</string>
+    <string name="title_manage_class">Classes</string>
+    <string name="title_activity_add_course">Add Course</string>
+</resources>

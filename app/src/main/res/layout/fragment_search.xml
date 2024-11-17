@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    tools:context=".ui.search.SearchFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+            <TextView
+                android:id="@+id/text_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:text="Search"
+                android:layout_alignParentLeft="true"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/input_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:background="@drawable/rounded_edittext"
+                android:padding="18dp"
+                android:hint="John Cena"/>
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="1dp"
+                android:backgroundTint="@color/common_google_signin_btn_text_light_default"
+                android:text="Search"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@android:color/white"
+                />
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Result"
+            android:layout_alignParentLeft="true"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="16dp"
+            tools:listitem="@layout/item_class" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
